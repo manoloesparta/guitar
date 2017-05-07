@@ -15,8 +15,10 @@ scales = {
 }
 
 if __name__ == '__main__':
+	#iter items to get chords
 	for x,y in scales.items():
 		print(x + '  :  ',end="")
+		#iter items to get family chords
 		for i in y:
 			print(i,end=" ")
 		print('\n')
