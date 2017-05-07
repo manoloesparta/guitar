@@ -15,5 +15,8 @@ scales = {
 }
 
 if __name__ == '__main__':
-	pass
-
+	for x,y in scales.items():
+		print(x + '  :  ',end="")
+		for i in y:
+			print(i,end=" ")
+		print('\n')
