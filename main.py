@@ -2,30 +2,26 @@ from scales import *
 import random
 
 def main():
-	#Shows the avaible chords
-	for x,y in scales.items():
-		print(x, end=' ')
-	#You choose a chord
-	chord = input('\nChoose a chord: ')
-	#Capitalize chord
-	chord = chord[0].upper() + chord[1:].lower()
-	#This chord exist?
-	try:
-		scales[chord]
-	#If not cancel all the program
-	except KeyError:
-		print('That chord isnt included')
-		quit()
-	#Assign the probably chosen chords
-	prob_chords = scales[chord]
-	#How much chords are we talking about?
-	count = input('How many chords?')
-	count = int(count)
-	#Creating the new chord progression
-	progression = ''
-	for i in range(int(count)):
-		progression += random.choice(prob_chords) + ' '
-	print(progression)
+	while True:
+		#What dou yo want to do
+		enter = input('1. Scales\n2. Exit\nWhat option: ')
+		enter = int(enter)
+		#run scales.py
+		if enter == 1:
+			#Shows the avaible chords
+			for x,y in scales.items():
+				print(x, end=' ')
+			#choose a chord
+			chord = input('\nChoose a chord: ')
+			#how many chords
+			count = input('How many chords: ')
+			count = int(count)
+			#run the function
+			print(getscales(chord,count)+'\n')
+		#exit program
+		elif enter == 2:
+			print('Bye.')
+			break
 
 if __name__ == '__main__':
 	main()
