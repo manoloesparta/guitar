@@ -1,19 +1,19 @@
 import random
 #Declaring my scales and possible chords
 scales = {
-	'C':['C','Dm','Em','F','G','Am','B0'],
-	'Db':['Db','Ebm','Fm','Gb','Ab','Bbm','C0'],
-	'D':['D','Em','F#m','G','A','Bm','C#0'],
-	'Eb':['Eb','Fm','Gm','Ab','Bb','Cm','D0'],
-	'E':['E','F#m','G#m','A','B','C#m','D#0'],
-	'F':['F','Gm','Am','Bb','C','Dm','E0'],
-	'F#':['F#','G#m','A#m','B','C#','D#m','E#0'],
-	'Gb':['Gb','Abm','Bbm','Cb','Db','Em','F#0'],
-	'G':['G','Am','Bm','C','D','Em','G0'],
-	'Ab':['Ab','Bbm','Cm','Db','Eb','Fm','G0'],
-	'A':['A','Bm','C#m','D','E','F#m','G#0'],
-	'Bb':['Bb','Cm','Dm','Eb','F','Gm','A0'],
-	'B':['B','C#m','D#m','E','F#','G#m','A#0'],
+	'C':['C','Dm','Em','F','G','Am'],
+	'Db':['Db','Ebm','Fm','Gb','Ab','Bbm'],
+	'D':['D','Em','F#m','G','A','Bm'],
+	'Eb':['Eb','Fm','Gm','Ab','Bb','Cm'],
+	'E':['E','F#m','G#m','A','B','C#m'],
+	'F':['F','Gm','Am','Bb','C','Dm'],
+	'F#':['F#','G#m','A#m','B','C#','D#m'],
+	'Gb':['Gb','Abm','Bbm','Cb','Db','Em'],
+	'G':['G','Am','Bm','C','D','Em'],
+	'Ab':['Ab','Bbm','Cm','Db','Eb','Fm'],
+	'A':['A','Bm','C#m','D','E','F#m'],
+	'Bb':['Bb','Cm','Dm','Eb','F','Gm'],
+	'B':['B','C#m','D#m','E','F#','G#m'],
 }
 
 def getscales(chord,count):
