@@ -35,6 +35,27 @@ def getscales(chord,count):
 	#return my progression
 	return progression
 
+def actual_runner():
+	#run the actual program
+	#Shows the avaible chords
+	for x,y in scales.items():
+		print(x, end=' ')
+	#Choose a chord
+	chord = input('\nChoose a chord: ')
+	#Repeat chords?
+	repeat = input('Want to chords repeat (y/n): ')
+	if not (repeat != 'y' or repeat != 'n'):
+		print('Dont have that option')
+	#how many chords
+	count = input('How many chords: ')
+	try:
+		count = int(count)
+	except ValueError:
+		print('That doesnt is a number')
+		quit()
+	#run the function
+	return getscales(chord,count)
+
 if __name__ == '__main__':
 	#show the dictiorie scales
 	#iter items to get chords
@@ -44,14 +65,3 @@ if __name__ == '__main__':
 		for i in y:
 			print(i,end=" ")
 		print('\n')
-	#run the actual program
-	#Shows the avaible chords
-	for x,y in scales.items():
-		print(x, end=' ')
-	#Choose a chord
-	chord = input('\nChoose a chord: ')
-	#how many chords
-	count = input('How many chords: ')
-	count = int(count)
-	#run the function
-	print(getscales(chord,count))
